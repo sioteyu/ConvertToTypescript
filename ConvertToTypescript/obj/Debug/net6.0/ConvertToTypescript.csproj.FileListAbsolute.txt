@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\bin\Debug\net6.0\ConvertToTypescript.exe
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\bin\Debug\net6.0\ConvertToTypescript.deps.json
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\bin\Debug\net6.0\ConvertToTypescript.runtimeconfig.json
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\bin\Debug\net6.0\ConvertToTypescript.dll
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\bin\Debug\net6.0\ConvertToTypescript.pdb
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\obj\Debug\net6.0\ConvertToTypescript.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\obj\Debug\net6.0\ConvertToTypescript.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\obj\Debug\net6.0\ConvertToTypescript.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\obj\Debug\net6.0\ConvertToTypescript.AssemblyInfo.cs
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\obj\Debug\net6.0\ConvertToTypescript.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\obj\Debug\net6.0\ConvertToTypescript.dll
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\obj\Debug\net6.0\refint\ConvertToTypescript.dll
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\obj\Debug\net6.0\ConvertToTypescript.pdb
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\obj\Debug\net6.0\ConvertToTypescript.genruntimeconfig.cache
+C:\Users\Admin\source\repos\ConvertToTypescript\ConvertToTypescript\obj\Debug\net6.0\ref\ConvertToTypescript.dll
