@@ -13,12 +13,11 @@ class Program
         {
             public string Origin { get; set; }
             public string Destination { get; set; }
-            public string FlighDuration { get; set; }
+            public string FlightDuration { get; set; }
         }
     }
     static void Main(String[] args)
     {
-        string[] specialWords = new string[] { "class", "string", "int", "long", "List" };
         List<StringBuilder> list = new List<StringBuilder>();
         Console.Write("Enter class string: ");
         StringBuilder lines = new StringBuilder();
@@ -44,23 +43,19 @@ class Program
                     }
                     else if (word.Contains("string"))
                     {
-                        input = "string";
+                        input = word;
                     }
                     else if (word.Contains("int"))
                     {
-                        input = "int";
+                        input = word;
                     }
                     else if (word.Contains("long"))
                     {
-                        input = "long";
+                        input = word;
                     }
                     else if (word.Contains("List"))
                     {
                         input = word;
-                    }
-                    else if (word == "}")
-                    {
-                        counter -= 1;
                     }
                 }
                 else
@@ -68,19 +63,25 @@ class Program
                     StringBuilder converted = list.ElementAt(counter);
                     if (input == "class")
                     {
-                        converted.AppendLine("export interface " + word + "{");
+                        string tmp = word.Trim().Replace("\n", "");
+                        converted.AppendLine("export interface " + tmp + "{");
                         input = "";
                     }
                     else if (input.Contains("List"))
                     {
                         Regex regex = new Regex("<(.*?)>");
                         string listName = regex.Match(input).Groups[1].ToString();
-                        converted.AppendLine(word.ToLower() + ":" + listName + ":[];");
+                        converted.AppendLine("\t" + word.ToLower() + ": " + listName + "[];");
                         input = "";
                     }
                     else
                     {
-                        converted.AppendLine(word.ToLower() + ":" + input + ";");
+                        string isNull = "";
+                        if(input.Contains("?"))
+                        {
+                            isNull = "?";
+                        }
+                        converted.AppendLine("\t" + word[0].ToString().ToLower() + word.Substring(1) + isNull + ": " + input.ToLower().Replace("?", "") + ";");
                         input = "";
                     }
                 }
@@ -90,7 +91,7 @@ class Program
                 item.AppendLine("}");
                 final.Append(item);
             }
-            Console.WriteLine("The converted string is: ");
+            Console.WriteLine("The converted string is: \n");
             Console.WriteLine(final.ToString());
         }
     }
